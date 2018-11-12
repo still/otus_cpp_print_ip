@@ -5,6 +5,7 @@
 #include <type_traits>
 #include <vector>
 #include <list>
+#include <tuple>
 
 using namespace std;
 
@@ -53,20 +54,20 @@ struct TuplePrinter {
     static void print(const Tuple& t)
     {
         TuplePrinter<Tuple, N-1>::print(t);
-        std::cout << "." << std::get<N-1>(t);
+        cout << "." << get<N-1>(t);
     }
 };
 template<class Tuple>
 struct TuplePrinter<Tuple, 1> {
     static void print(const Tuple& t)
     {
-        std::cout << std::get<0>(t);
+        cout << get<0>(t);
     }
 };
 // end helper function
 
 template <typename...Args>
-typename std::enable_if<is_same_t<Args...>::value>::type print_ip(const tuple<Args...>& val) {
+typename enable_if<is_same_t<Args...>::value>::type print_ip(const tuple<Args...>& val) {
     TuplePrinter<decltype(val), sizeof...(Args)>::print(val);
     cout << endl;
 }
