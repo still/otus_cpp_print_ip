@@ -29,7 +29,7 @@ unsigned char integralByte(const T& val, const char& n) {
 }
 
 template <typename T>
-typename std::enable_if_t<std::is_integral<T>::value> print_ip(const T& val) {
+std::enable_if_t<std::is_integral<T>::value> print_ip(const T& val) {
     for(auto i = sizeof(T); i-- > 0; ) {
         cout << to_string(integralByte(val, i)) << (i == 0 ? "" : ".");
     }
@@ -41,7 +41,7 @@ void print_ip(const string& val) {
 }
 
 template <typename T>
-typename std::enable_if_t<is_container<T>::value> print_ip(const T& val) {
+std::enable_if_t<is_container<T>::value> print_ip(const T& val) {
     for(const auto& i: val) {
         cout << to_string(i) << (&i == &val.back() ? "" : ".");
     }
