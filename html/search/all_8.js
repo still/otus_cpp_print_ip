@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['_7ecout_5fredirect',['~cout_redirect',['../structcout__redirect.html#a6f5fcbfd32ccdc91684fb4c91d170001',1,'cout_redirect']]]
+  ['test_5fstream',['test_stream',['../main__test_8cpp.html#a2fdd3776ac4ce266caa97ebebe59cbe1',1,'main_test.cpp']]],
+  ['tupleprinter',['TuplePrinter',['../structTuplePrinter.html',1,'']]],
+  ['tupleprinter_3c_20tuple_2c_201_20_3e',['TuplePrinter&lt; Tuple, 1 &gt;',['../structTuplePrinter_3_01Tuple_00_011_01_4.html',1,'']]]
 ];
