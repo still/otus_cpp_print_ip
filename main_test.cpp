@@ -62,11 +62,6 @@ BOOST_AUTO_TEST_CASE(test_print_ip)
     stream.clear();
     print_ip(make_tuple("192", "168", "1", "5"));
     BOOST_CHECK(stream.is_equal("192.168.1.5\n"));
-
-
-
-
-    BOOST_CHECK(true);
 }
 
 BOOST_AUTO_TEST_SUITE_END()

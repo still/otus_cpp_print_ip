@@ -7,6 +7,10 @@
 #include <list>
 #include <tuple>
 
+/**
+ * @brief version Получение версии.
+ * @return Номер версии.
+ */
 int version();
 
 // check container
@@ -26,6 +30,11 @@ unsigned char integralByte(const T& val, const char& n) {
     return (val >> ((8 * n) & 0xFF));
 }
 
+/**
+ * @brief print_ip Печать ip-адреса в интегральном виде.
+ * @tparam T - интегральный тип.
+ * @param val - значение ip-адреса.
+ */
 template <typename T>
 std::enable_if_t<std::is_integral<T>::value> print_ip(const T& val) {
     for(auto i = sizeof(T); i-- > 0; ) {
@@ -34,6 +43,10 @@ std::enable_if_t<std::is_integral<T>::value> print_ip(const T& val) {
     std::cout << std::endl;
 }
 
+/**
+ * @brief print_ip Печать ip-адреса в строковом виде.
+ * @param val - значение ip-адреса.
+ */
 void print_ip(const std::string& val) {
     std::cout << val << std::endl;
 }
