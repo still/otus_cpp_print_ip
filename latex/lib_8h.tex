@@ -1,0 +1,140 @@
+\hypertarget{lib_8h}{\section{lib.\-h File Reference}
+\label{lib_8h}\index{lib.\-h@{lib.\-h}}
+}
+{\ttfamily \#include \char`\"{}version.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$type\-\_\-traits$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$tuple$>$}\\*
+Include dependency graph for lib.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lib_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{lib_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structis__container}{is\-\_\-container$<$ T $>$}
+\item 
+struct \hyperlink{structis__container_3_01std_1_1vector_3_01T_8_8_8_4_01_4}{is\-\_\-container$<$ std\-::vector$<$ T...$>$ $>$}
+\item 
+struct \hyperlink{structis__container_3_01std_1_1list_3_01T_8_8_8_4_01_4}{is\-\_\-container$<$ std\-::list$<$ T...$>$ $>$}
+\item 
+struct \hyperlink{structis__same__t}{is\-\_\-same\-\_\-t$<$ T, Args $>$}
+\item 
+struct \hyperlink{structis__same__t_3_01T_01_4}{is\-\_\-same\-\_\-t$<$ T $>$}
+\item 
+struct \hyperlink{structis__same__t_3_01T_00_01U_00_01Args_8_8_8_4}{is\-\_\-same\-\_\-t$<$ T, U, Args...$>$}
+\item 
+struct \hyperlink{structis__same__t_3_01T_00_01T_00_01Args_8_8_8_4}{is\-\_\-same\-\_\-t$<$ T, T, Args...$>$}
+\item 
+struct \hyperlink{structTuplePrinter}{Tuple\-Printer$<$ Tuple, N $>$}
+\item 
+struct \hyperlink{structTuplePrinter_3_01Tuple_00_011_01_4}{Tuple\-Printer$<$ Tuple, 1 $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{lib_8h_ae64f17a84dc9c7144d1036498ff26fd9}{version} ()
+\begin{DoxyCompactList}\small\item\em version Получение версии. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\unsigned char \hyperlink{lib_8h_adcf537f99d43dc6d746c61025eef962d}{integral\-Byte} (const T \&val, const char \&n)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\-::enable\-\_\-if\-\_\-t\\*
+$<$ std\-::is\-\_\-integral$<$ T $>$\-::value $>$ \hyperlink{lib_8h_a6ed74af6a137d944e7c6d7aa831fde15}{print\-\_\-ip} (const T \&val)
+\begin{DoxyCompactList}\small\item\em print\-\_\-ip Печать ip-\/адреса в интегральном виде. \end{DoxyCompactList}\item 
+void \hyperlink{lib_8h_a0992bea83d590061735494a2ed7fd653}{print\-\_\-ip} (const std\-::string \&val)
+\begin{DoxyCompactList}\small\item\em print\-\_\-ip Печать ip-\/адреса в строковом виде. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\-::enable\-\_\-if\-\_\-t$<$ \hyperlink{structis__container}{is\-\_\-container}\\*
+$<$ T $>$\-::value $>$ \hyperlink{lib_8h_af620902388f12a15b227bc860fc02a26}{print\-\_\-ip} (const T \&val)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\std\-::enable\-\_\-if$<$ \hyperlink{structis__same__t}{is\-\_\-same\-\_\-t}\\*
+$<$ Args...$>$\-::value $>$\-::type \hyperlink{lib_8h_a1f7c08e0d4b6ed4afe8bff90f21fe16c}{print\-\_\-ip} (const std\-::tuple$<$ Args...$>$ \&val)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{lib_8h_adcf537f99d43dc6d746c61025eef962d}{\index{lib.\-h@{lib.\-h}!integral\-Byte@{integral\-Byte}}
+\index{integral\-Byte@{integral\-Byte}!lib.h@{lib.\-h}}
+\subsubsection[{integral\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ unsigned char integral\-Byte (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{val, }
+\item[{const char \&}]{n}
+\end{DoxyParamCaption}
+)}}\label{lib_8h_adcf537f99d43dc6d746c61025eef962d}
+\hypertarget{lib_8h_a6ed74af6a137d944e7c6d7aa831fde15}{\index{lib.\-h@{lib.\-h}!print\-\_\-ip@{print\-\_\-ip}}
+\index{print\-\_\-ip@{print\-\_\-ip}!lib.h@{lib.\-h}}
+\subsubsection[{print\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\-::enable\-\_\-if\-\_\-t$<$std\-::is\-\_\-integral$<$T$>$\-::value$>$ print\-\_\-ip (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{val}
+\end{DoxyParamCaption}
+)}}\label{lib_8h_a6ed74af6a137d944e7c6d7aa831fde15}
+
+
+print\-\_\-ip Печать ip-\/адреса в интегральном виде. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & -\/ интегральный тип. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & -\/ значение ip-\/адреса. \\
+\hline
+\end{DoxyParams}
+\hypertarget{lib_8h_a0992bea83d590061735494a2ed7fd653}{\index{lib.\-h@{lib.\-h}!print\-\_\-ip@{print\-\_\-ip}}
+\index{print\-\_\-ip@{print\-\_\-ip}!lib.h@{lib.\-h}}
+\subsubsection[{print\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-ip (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{val}
+\end{DoxyParamCaption}
+)}}\label{lib_8h_a0992bea83d590061735494a2ed7fd653}
+
+
+print\-\_\-ip Печать ip-\/адреса в строковом виде. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & -\/ значение ip-\/адреса. \\
+\hline
+\end{DoxyParams}
+\hypertarget{lib_8h_af620902388f12a15b227bc860fc02a26}{\index{lib.\-h@{lib.\-h}!print\-\_\-ip@{print\-\_\-ip}}
+\index{print\-\_\-ip@{print\-\_\-ip}!lib.h@{lib.\-h}}
+\subsubsection[{print\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\-::enable\-\_\-if\-\_\-t$<${\bf is\-\_\-container}$<$T$>$\-::value$>$ print\-\_\-ip (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{val}
+\end{DoxyParamCaption}
+)}}\label{lib_8h_af620902388f12a15b227bc860fc02a26}
+\hypertarget{lib_8h_a1f7c08e0d4b6ed4afe8bff90f21fe16c}{\index{lib.\-h@{lib.\-h}!print\-\_\-ip@{print\-\_\-ip}}
+\index{print\-\_\-ip@{print\-\_\-ip}!lib.h@{lib.\-h}}
+\subsubsection[{print\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ std\-::enable\-\_\-if$<${\bf is\-\_\-same\-\_\-t}$<$Args...$>$\-::value$>$\-::type print\-\_\-ip (
+\begin{DoxyParamCaption}
+\item[{const std\-::tuple$<$ Args...$>$ \&}]{val}
+\end{DoxyParamCaption}
+)}}\label{lib_8h_a1f7c08e0d4b6ed4afe8bff90f21fe16c}
+\hypertarget{lib_8h_ae64f17a84dc9c7144d1036498ff26fd9}{\index{lib.\-h@{lib.\-h}!version@{version}}
+\index{version@{version}!lib.h@{lib.\-h}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}int version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{lib_8h_ae64f17a84dc9c7144d1036498ff26fd9}
+
+
+version Получение версии. 
+
+\begin{DoxyReturn}{Returns}
+Номер версии. 
+\end{DoxyReturn}
