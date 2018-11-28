@@ -27,41 +27,41 @@ This graph shows which files directly or indirectly include this file\-:
 \begin{DoxyCompactItemize}
 \item 
 struct \hyperlink{structis__container}{is\-\_\-container$<$ T $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Проверка типа -\/ контейнер. \end{DoxyCompactList}\item 
 struct \hyperlink{structis__container_3_01std_1_1vector_3_01T_8_8_8_4_01_4}{is\-\_\-container$<$ std\-::vector$<$ T...$>$ $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Проверка типа -\/ контейнер. \end{DoxyCompactList}\item 
 struct \hyperlink{structis__container_3_01std_1_1list_3_01T_8_8_8_4_01_4}{is\-\_\-container$<$ std\-::list$<$ T...$>$ $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Проверка типа -\/ контейнер. \end{DoxyCompactList}\item 
 struct \hyperlink{structis__same__t}{is\-\_\-same\-\_\-t$<$ T, Args $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Проверка на идентичность типов. \end{DoxyCompactList}\item 
 struct \hyperlink{structis__same__t_3_01T_01_4}{is\-\_\-same\-\_\-t$<$ T $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Проверка на идентичность типов. \end{DoxyCompactList}\item 
 struct \hyperlink{structis__same__t_3_01T_00_01U_00_01Args_8_8_8_4}{is\-\_\-same\-\_\-t$<$ T, U, Args...$>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Проверка на идентичность типов. \end{DoxyCompactList}\item 
 struct \hyperlink{structis__same__t_3_01T_00_01T_00_01Args_8_8_8_4}{is\-\_\-same\-\_\-t$<$ T, T, Args...$>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Проверка на идентичность типов. \end{DoxyCompactList}\item 
 struct \hyperlink{structTuplePrinter}{Tuple\-Printer$<$ Tuple, N $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Структура -\/ хелпер для печати кортежа произвольной длины. \end{DoxyCompactList}\item 
 struct \hyperlink{structTuplePrinter_3_01Tuple_00_011_01_4}{Tuple\-Printer$<$ Tuple, 1 $>$}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Структура -\/ хелпер для печати кортежа произвольной длины. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 int \hyperlink{lib_8h_ae64f17a84dc9c7144d1036498ff26fd9}{version} ()
 \begin{DoxyCompactList}\small\item\em version Получение версии. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\unsigned char \hyperlink{lib_8h_adcf537f99d43dc6d746c61025eef962d}{integral\-Byte} (const T \&val, const char \&n)
-\item 
+\begin{DoxyCompactList}\small\item\em Получение конкретного байта числа. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\std\-::enable\-\_\-if\-\_\-t\\*
 $<$ std\-::is\-\_\-integral$<$ T $>$\-::value $>$ \hyperlink{lib_8h_a6ed74af6a137d944e7c6d7aa831fde15}{print\-\_\-ip} (const T \&val)
-\begin{DoxyCompactList}\small\item\em print\-\_\-ip Печать ip-\/адреса в интегральном виде. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Печать ip-\/адреса в интегральном виде. \end{DoxyCompactList}\item 
 void \hyperlink{lib_8h_a0992bea83d590061735494a2ed7fd653}{print\-\_\-ip} (const std\-::string \&val)
-\begin{DoxyCompactList}\small\item\em print\-\_\-ip Печать ip-\/адреса в строковом виде. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Печать ip-\/адреса в строковом виде. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\std\-::enable\-\_\-if\-\_\-t$<$ \hyperlink{structis__container}{is\-\_\-container}\\*
 $<$ T $>$\-::value $>$ \hyperlink{lib_8h_af620902388f12a15b227bc860fc02a26}{print\-\_\-ip} (const T \&val)
-\item 
+\begin{DoxyCompactList}\small\item\em Печать ip-\/адреса в виде контейнера. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename... Args$>$ }\\std\-::enable\-\_\-if$<$ \hyperlink{structis__same__t}{is\-\_\-same\-\_\-t}\\*
 $<$ Args...$>$\-::value $>$\-::type \hyperlink{lib_8h_a1f7c08e0d4b6ed4afe8bff90f21fe16c}{print\-\_\-ip} (const std\-::tuple$<$ Args...$>$ \&val)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Печать ip-\/адреса в виде кортежа. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
@@ -73,6 +73,25 @@ $<$ Args...$>$\-::value $>$\-::type \hyperlink{lib_8h_a1f7c08e0d4b6ed4afe8bff90f
 \item[{const char \&}]{n}
 \end{DoxyParamCaption}
 )}}\label{lib_8h_adcf537f99d43dc6d746c61025eef962d}
+
+
+Получение конкретного байта числа. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & -\/ интегральный тип. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & -\/ число. \\
+\hline
+{\em n} & -\/ номер байта. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Искомый байт. 
+\end{DoxyReturn}
 \hypertarget{lib_8h_a6ed74af6a137d944e7c6d7aa831fde15}{\index{lib.\-h@{lib.\-h}!print\-\_\-ip@{print\-\_\-ip}}
 \index{print\-\_\-ip@{print\-\_\-ip}!lib.h@{lib.\-h}}
 \subsubsection[{print\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\-::enable\-\_\-if\-\_\-t$<$std\-::is\-\_\-integral$<$T$>$\-::value$>$ print\-\_\-ip (
@@ -82,7 +101,7 @@ $<$ Args...$>$\-::value $>$\-::type \hyperlink{lib_8h_a1f7c08e0d4b6ed4afe8bff90f
 )}}\label{lib_8h_a6ed74af6a137d944e7c6d7aa831fde15}
 
 
-print\-\_\-ip Печать ip-\/адреса в интегральном виде. 
+Печать ip-\/адреса в интегральном виде. 
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -103,7 +122,7 @@ print\-\_\-ip Печать ip-\/адреса в интегральном вид�
 )}}\label{lib_8h_a0992bea83d590061735494a2ed7fd653}
 
 
-print\-\_\-ip Печать ip-\/адреса в строковом виде. 
+Печать ip-\/адреса в строковом виде. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -117,6 +136,20 @@ print\-\_\-ip Печать ip-\/адреса в строковом виде.
 \item[{const T \&}]{val}
 \end{DoxyParamCaption}
 )}}\label{lib_8h_af620902388f12a15b227bc860fc02a26}
+
+
+Печать ip-\/адреса в виде контейнера. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & -\/ тип. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & -\/ значение ip-\/адреса. \\
+\hline
+\end{DoxyParams}
 \hypertarget{lib_8h_a1f7c08e0d4b6ed4afe8bff90f21fe16c}{\index{lib.\-h@{lib.\-h}!print\-\_\-ip@{print\-\_\-ip}}
 \index{print\-\_\-ip@{print\-\_\-ip}!lib.h@{lib.\-h}}
 \subsubsection[{print\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ std\-::enable\-\_\-if$<${\bf is\-\_\-same\-\_\-t}$<$Args...$>$\-::value$>$\-::type print\-\_\-ip (
@@ -124,6 +157,20 @@ print\-\_\-ip Печать ip-\/адреса в строковом виде.
 \item[{const std\-::tuple$<$ Args...$>$ \&}]{val}
 \end{DoxyParamCaption}
 )}}\label{lib_8h_a1f7c08e0d4b6ed4afe8bff90f21fe16c}
+
+
+Печать ip-\/адреса в виде кортежа. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Args} & -\/ типы членов кортежа. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & -\/ значение ip-\/адреса. \\
+\hline
+\end{DoxyParams}
 \hypertarget{lib_8h_ae64f17a84dc9c7144d1036498ff26fd9}{\index{lib.\-h@{lib.\-h}!version@{version}}
 \index{version@{version}!lib.h@{lib.\-h}}
 \subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}int version (
